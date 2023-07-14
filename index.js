@@ -36,3 +36,23 @@ while(x !== y) {
     x = Math.floor((Math.random() * 10) + 1);
     console.log(x);
 }
+
+// 6. Sukurti masyvą, kurio ilgis būtų nuo 20 iki 30, o reikšmės būtų skaičiai nuo 10 iki 30. Surasti didžiausią masyvo reikšmę, NENAUDOJANT sort() bei Math.max() funkcijų.
+
+let = length = [];
+const masyvoIlgis = Math.floor(Math.random() * (30 - 20 + 1) + 20);
+
+console.log(masyvoIlgis);
+
+for (let i = 0; i < masyvoIlgis; i++) {
+    length.push(Math.floor(Math.random() * (20 -1 + 1) + 1));
+}
+console.log(length);
+
+const didziausiaReiksme = length;
+
+let max = didziausiaReiksme[0];
+for (let i = 0; i < didziausiaReiksme.length; i++) {
+    if (didziausiaReiksme[i] > max) { max = didziausiaReiksme[i]; }
+}
+console.log("max = " + max);
