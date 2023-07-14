@@ -20,3 +20,10 @@ for (let i = 1; i <= 10; i++) {
 for (let i = 0; i <= 10; i+=2) {
     console.log(i);
 }
+
+// 4. Naudojant for ciklą, sugeneruoti penkis atsitiktinius skaičius nuo 1 iki 10. Išvesti juos konsolėje. (5 taškai)
+
+for (let i = 0; i < 5; i++) {
+    const atsitiktinisSkaicius = Math.floor(Math.random() * 10) + 1;
+    console.log(atsitiktinisSkaicius);
+}
