@@ -70,3 +70,13 @@ for (let i = 0; i < 100; i++) {
 }
 
 console.log(result);
+
+// 8. Parašyti funkciją - lygineSuma. Funkcijos parametrai - du kintamieji. Testų reikalavimai - abu kitamieji turi būti arba skaičiai arba masyvai(negali būti vienas skaičius, kitas masyvas).
+
+function lygineSuma(c, d) {
+    const sum = c + d;
+    return sum % 2 === 0;
+}
+
+console.log(lygineSuma(2, 3));
+console.log(lygineSuma(4, 8));
