@@ -89,3 +89,14 @@ function lygineSuma(c, d) {
 
 console.log(lygineSuma([2, 4, 5, 1], [3, 3, 1]));
 console.log(lygineSuma(42, 2));
+
+// 9. Parašyti funkciją pirminisSkaicius. Funkcija turi vieną kintamąjį. Turi būti patikrinimas, kad kintamasis yra skaičius. Funkcija turi grąžinti ar pateiktas skaičius yra pirminis( pirminis
+//    skaičius yra tas, kuris dalinasi tik iš savęs ir tik iš vieneto be liekanos.) (10 taškų)
+
+function pirminisSkaicius(k) {
+    if (typeof k === 'number') {
+        return 'yra skaicius';
+    }
+}
+
+console.log(pirminisSkaicius(3));
