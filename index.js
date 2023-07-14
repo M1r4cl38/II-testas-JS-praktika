@@ -27,3 +27,12 @@ for (let i = 0; i < 5; i++) {
     const atsitiktinisSkaicius = Math.floor(Math.random() * 10) + 1;
     console.log(atsitiktinisSkaicius);
 }
+
+// 5. Naudojant while cikla, spausdinti atsitiktinius skaicius nuo 1 iki 10. Paskutinis atspausdintas skaicius turi büti 5. (7 taskai)
+
+let y = 10;
+let x = 1;
+while(x !== y) {
+    x = Math.floor((Math.random() * 10) + 1);
+    console.log(x);
+}
