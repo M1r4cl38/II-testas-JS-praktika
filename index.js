@@ -56,3 +56,17 @@ for (let i = 0; i < didziausiaReiksme.length; i++) {
     if (didziausiaReiksme[i] > max) { max = didziausiaReiksme[i]; }
 }
 console.log("max = " + max);
+
+// 7. Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 100. Suskaičiuokite kiek yra kiekvienos raidės. (7 taškai) 
+
+function atsitiktineRaide (array) {
+    return array[Math.floor(Math.random() * array.length)]
+}
+
+let raides = ["ABCD"];
+    result = '';
+for (let i = 0; i < 100; i++) {
+    result += atsitiktineRaide(raides);
+}
+
+console.log(result);
