@@ -72,11 +72,20 @@ for (let i = 0; i < 100; i++) {
 console.log(result);
 
 // 8. Parašyti funkciją - lygineSuma. Funkcijos parametrai - du kintamieji. Testų reikalavimai - abu kitamieji turi būti arba skaičiai arba masyvai(negali būti vienas skaičius, kitas masyvas).
+// Jei kintamieji skaičiai, grąžinti skaičių sumą, jei kintamieji masyvai - grąžinti masyvų ilgių sumą. Jei abu kintamieji skaičiai arba masyvai, bet suma nelyginė - grąžinti tekstą, kad suma nelyginė. (10 taškų)
 
 function lygineSuma(c, d) {
-    const sum = c + d;
-    return sum % 2 === 0;
+    if (typeof c === 'number' && typeof d === 'number') {
+        return c + d;
+
+    } if (Array.isArray(c) && Array.isArray(d)) {
+        return c.length + d.length;
+    }
+    else {(typeof c === 'number' && typeof d === 'number' || Array.isArray(c) && Array.isArray(d) && sum % 2 !== 0);
+        return 'suma nelygine';
+    }
 }
 
-console.log(lygineSuma(2, 3));
-console.log(lygineSuma(4, 8));
+
+console.log(lygineSuma([2, 4, 5, 1], [3, 3, 1]));
+console.log(lygineSuma(42, 2));
